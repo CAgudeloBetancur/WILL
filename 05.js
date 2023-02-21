@@ -15,7 +15,28 @@ function pluck(array, propiedad) {
 
   // Tu código acá:
 
+  const nuevoArr = array.map(elemento => elemento[propiedad] );
+
+  return nuevoArr;
+
 }
+
+const productos = [
+  {
+    nombre : "Televisor",
+    precio : 300,
+  },
+  {
+    nombre : "Lavadora",
+    precio : 700,
+  },
+  {
+    nombre : "Horno",
+    precio : 150,
+  },
+];
+
+console.log(pluck(productos,'precio'));
 
 // No modifiques nada debajo de esta linea //
 

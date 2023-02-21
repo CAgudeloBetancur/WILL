@@ -12,7 +12,14 @@ function soloNumeros(array) {
 
   // Tu código aca:
 
+  let nuevo = array.filter(n => Number.isInteger(n));
+
+  return nuevo;
+
 }
+
+console.log(soloNumeros([1,'Henry',2]));
+
 
 // No modifiques nada debajo de esta linea //
 

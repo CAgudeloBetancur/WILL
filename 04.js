@@ -14,7 +14,15 @@ function numeroSimetrico(num) {
 
   // Tu código:
 
+  let cadena = num.toString();
+
+  let arr = cadena.split('').reverse().join('');
+  
+  return cadena === arr;
+
 }
+
+console.log(numeroSimetrico(3773));
 
 // No modifiques nada debajo de esta linea //
 
